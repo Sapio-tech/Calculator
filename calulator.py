@@ -15,7 +15,7 @@ def show_menu():
 
 while True:
     show_menu()
-    choice = input("Choose: ")
+    choice = input("Choose:")
 
     if choice == "0":
         print("Goodbye!")
