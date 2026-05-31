@@ -27,30 +27,28 @@ while True:
       print("Goodbye!")
       break
   elif choice in ["1","2","3","4","5"]:
-    a = float(input("Enter first number: "))
-    b = float(input(" Enter second number:"))
-    if choice == "1": result = add(a, b)
-    elif choice == "2": result = subtract(a, b)
-    elif choice == "3": result = multiply(a, b)
-    elif choice == "4": result = divide(a, b)
-    elif choice == "5": result = power(a, b)
-elif choice in ["6","7","8","9","10","11"]:
+     a = float(input("Enter first number: "))
+     b = float(input(" Enter second number:"))
+ if choice == "1": result = add(a, b)
+ elif choice == "2": result = subtract(a, b)
+ elif choice == "3": result = multiply(a, b)
+ elif choice == "4": result = divide(a, b)
+ elif choice == "5": result = power(a, b)
+     
+ elif choice in ["6","7","8","9","10","11"]:
     a = float(input("Enter number:"))
-    if choice == "6": result = sqrt(a)
-    elif choice == "7": result = sin(a)
-    elif choice == "8": result = cos(a)
-    elif choice == "9": result = tan(a)
-    elif choice == "10": result = log(a)
-    elif choice == "11": result = ln(a)
-elif choice == "12":
-    print("\n--- History ---")
-    for h in history: print(h)
-    continue
-else:
-    print("Invalid option!")
-    continue
-  
-print(f"Result:{result}")
-history.append(f"Option {choice}: {result}")
+ if choice == "6": result = sqrt(a)
+ elif choice == "7": result = sin(a)
+ elif choice == "8": result = cos(a)
+ elif choice == "9": result = tan(a)
+ elif choice == "10": result = log(a)
+ elif choice == "11": result = ln(a)
+ 
+ elif choice== "12":
+     for h in history: print(h)
+
+ else:
+     print("invalid!")
+    
 
     
